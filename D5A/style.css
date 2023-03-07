@@ -1,0 +1,4 @@
+body {text-align: center;}
+th {border: 1px solid black; height: 50px; width: 50px;}
+table {border-spacing: 0px; margin: auto auto;}
+tr:nth-child(even) {background-color: black;}
