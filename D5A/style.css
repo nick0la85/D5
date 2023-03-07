@@ -1,4 +1,46 @@
-body {text-align: center;}
-th {border: 1px solid black; height: 50px; width: 50px;}
-table {border-spacing: 0px; margin: auto auto;}
-tr:nth-child(even) {background-color: black;}
+body {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 200px;
+}
+
+th {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+}
+
+table {
+    border-spacing: 0px;
+    margin: auto auto;
+}
+
+tr:nth-child(even) th:nth-child(odd) {
+    background-color: black;
+}
+
+tr:nth-child(odd) th:nth-child(even) {
+    background-color: black;
+}
+
+tr:nth-child(even) th:nth-child(even) {
+    background-color: darkgoldenrod;
+}
+
+tr:nth-child(odd) th:nth-child(odd) {
+    background-color: darkgoldenrod;
+}
+
+th {position: relative;}
+span {position: absolute;}
+
+tr:first-child span {top: -20px; left: 15px;}
+tr:first-child th:first-child span:last-child {left: -20px; top:  15px;}
+tr th:first-child span {left: -20px; top: 15px;}
+tr th:last-child span {right: -20px; top:15px}
+tr:last-child span {bottom: -20px; left: 15px;}
+tr:first-child th:first-child span:first-child {top: -20px; left: 15px;}
+tr:last-child th:first-child span:last-child {top: 55px; left: 20px;}
+
