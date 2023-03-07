@@ -1,85 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .container {
-        margin-left: 4rem;
-        margin-top: 4rem;
-      }
-      .container div {
-        width: 70px;
-        height: 60px;
-        border: 1px solid black;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div>
-        <span>A</span>
-        <span>B</span>
-        <span>C</span>
-        <span>D</span>
-        <span>E</span>
-      </div>
-      <div>
-        <span>A</span>
-        <span>B</span>
-        <span>C</span>
-        <span>D</span>
-      </div>
-      <div>
-        <span>A</span>
-        <span>B</span>
-        <span>C</span>
-        <span>D</span>
-      </div>
-      <div>
-        <span>A</span>
-        <span>B</span>
-        <span>C</span>
-        <span>D</span>
-      </div>
-      <div>
-        <span>A</span>
-        <span>B</span>
-        <span>C</span>
-        <span>D</span>
-      </div>
-      <div>
-        <span>A</span>
-        <span>B</span>
-        <span>C</span>
-        <span>D</span>
-      </div>
-      <div>
-        <span>A</span>
-        <span>B</span>
-        <span>C</span>
-        <span>D</span>
-      </div>
-      <div>
-        <span>A</span>
-        <span>B</span>
-        <span>C</span>
-        <span>D</span>
-      </div>
-      <div>
-        <span>A</span>
-        <span>B</span>
-        <span>C</span>
-        <span>D</span>
-      </div>
-      <div>
-        <span>A</span>
-        <span>B</span>
-        <span>C</span>
-        <span>D</span>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    .container {
+      margin-left: 4rem;
+      margin-top: 4rem;
+    }
+
+    .container div {
+      width: 70px;
+      height: 60px;
+      border: 1px solid black;
+      float: left;
+    }
+
+    .container div:nth-child(even) {
+      border: 1px solid red
+    }
+
+
+    .container div:nth-child(odd) span:nth-child(2),
+    .container div:nth-child(odd) span:nth-child(4) {
+      color: green;
+    }
+
+    .container div:nth-child(2) span:last-of-type {
+      color: green
+    }
+
+    .container div:nth-child(6) span:not(:last-of-type) {
+      color: yellow
+    }
+
+    .container div {
+      position: relative;
+    }
+
+    .container div span {
+      position: absolute;
+    }
+
+    span:nth-child(1) {
+      top: 65px;
+      left: 25px;
+    }
+
+    span:nth-child(3) {
+      left: 15px;
+    }
+
+    span:nth-child(4) {
+      left: 30px;
+    }
+
+    span:nth-child(2) {
+      top: -20px;
+      left: 25px;
+    }
+
+    span:nth-child(3) {
+      left: 0px;
+    }
+
+    span:nth-child(4) {
+      left: 12.5px;
+    }
+
+    .container div:last-child span:last-of-type {
+      left: 80px;
+      top: 25px;
+    }
+
+    .container div:nth-child(1) span:last-of-type {
+      left: -25px;
+      top: 25px;
+    }
+
+    .container {
+      font-size: 0;
+    }
+    .container div {font-size: 1rem;}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <span>A</span>
+      <span>B</span>
+      <span>C</span>
+      <span>D</span>
+
     </div>
-  </body>
+    <div>
+      <span>A</span>
+      <span>B</span>
+      <span>C</span>
+      <span>D</span>
+    </div>
+    <div>
+      <span>A</span>
+      <span>B</span>
+      <span>C</span>
+      <span>D</span>
+    </div>
+    <div>
+      <span>A</span>
+      <span>B</span>
+      <span>C</span>
+      <span>D</span>
+    </div>
+    <div>
+      <span>A</span>
+      <span>B</span>
+      <span>C</span>
+      <span>D</span>
+    </div>
+    <div>
+      <span>A</span>
+      <span>B</span>
+      <span>C</span>
+      <span>D</span>
+    </div>
+    <div>
+      <span>A</span>
+      <span>B</span>
+      <span>C</span>
+      <span>D</span>
+    </div>
+    <div>
+      <span>A</span>
+      <span>B</span>
+      <span>C</span>
+      <span>D</span>
+    </div>
+    <div>
+      <span>A</span>
+      <span>B</span>
+      <span>C</span>
+      <span>D</span>
+    </div>
+    <div>
+      <span>A</span>
+      <span>B</span>
+      <span>C</span>
+      <span>D</span>
+    </div>
+  </div>
+</body>
+
 </html>
