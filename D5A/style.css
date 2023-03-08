@@ -17,6 +17,8 @@ table {
     margin: auto auto;
 }
 
+
+
 tr:nth-child(even) th:nth-child(odd) {
     background-color: black;
 }
@@ -33,14 +35,68 @@ tr:nth-child(odd) th:nth-child(odd) {
     background-color: darkgoldenrod;
 }
 
-th {position: relative;}
-span {position: absolute;}
+th {
+    position: relative;
+}
 
-tr:first-child span {top: -20px; left: 15px;}
-tr:first-child th:first-child span:last-child {left: -20px; top:  15px;}
-tr th:first-child span {left: -20px; top: 15px;}
-tr th:last-child span {right: -20px; top:15px}
-tr:last-child span {bottom: -20px; left: 15px;}
-tr:first-child th:first-child span:first-child {top: -20px; left: 15px;}
-tr:last-child th:first-child span:last-child {top: 55px; left: 20px;}
+span {
+    position: absolute;
+}
 
+tr:first-child span {
+    top: -20px;
+    left: 15px;
+}
+
+tr:first-child th:first-child span:last-child {
+    left: -20px;
+    top: 15px;
+}
+
+tr th:first-child span {
+    left: -20px;
+    top: 15px;
+}
+
+tr th:last-child span {
+    right: -20px;
+    top: 15px
+}
+
+tr:last-child span {
+    bottom: -20px;
+    left: 15px;
+}
+
+tr:first-child th:first-child span:first-child {
+    top: -20px;
+    left: 15px;
+}
+
+tr:last-child th:first-child span:last-child {
+    top: 55px;
+    left: 20px;
+}
+
+tr:last-child th:last-child span:first-child {
+    top: 55px;
+    left: -15px;
+
+}
+
+tr:last-child th:last-child span:last-child {
+    right: -70px;
+
+}
+
+tr:first-child th:last-child span:last-child {
+    right: -70px;
+    top: 15px;
+}
+
+tr:first-child th:last-child span:first-child {
+    top: -20px;
+    right: 15px  
+}
+
+th:hover {background-color: red;}
