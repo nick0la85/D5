@@ -99,6 +99,8 @@ tr:first-child td:last-child span:first-child {
     right: 15px
 }
 
-td:hover {
-    cursor: pointer;
+
+
+td:not([style*="background-color: darkgoldenrod"]):not([style*="background-color: black"]):hover {
+    background-color: red; cursor: pointer;
 }

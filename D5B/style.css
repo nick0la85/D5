@@ -1,0 +1,89 @@
+h1 {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.table {
+    display: table;
+    margin: auto auto;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+
+
+.row:nth-child(even) .cell:nth-child(odd) {
+    background-color: black;
+}
+
+.row:nth-child(odd) .cell:nth-child(even) {
+    background-color: black;
+}
+
+.row:nth-child(even) .cell:nth-child(even) {
+    background-color: darkgoldenrod;
+}
+
+.row:nth-child(odd) .cell:nth-child(odd) {
+    background-color: darkgoldenrod;
+}
+
+
+
+.cell:not([style*="background-color: black"]):not([style*="background-color: darkgoldenrod"]):hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.cell {
+    position: relative;
+}
+
+span {
+    position: absolute;
+}
+
+.row:first-child span {
+    top: -20px;
+    left: 15px;
+}
+
+
+
+
+
+
+
+.row .cell:first-child span:first-child {left: -20px;
+    top: 15px;}
+
+.cell:last-child span{left: 60px;
+    top: 15px}
+
+    .row:first-child .cell:first-child span:last-child {
+        left: 20px;
+        top: -20px;
+    }
+
+    .row:first-child .cell:last-child span:last-child {left: 20px;
+        top: -20px}
+
+.row:last-child span {
+    bottom: -20px;
+    left: 15px;
+}
+
+.row:last-child .cell:last-child span:first-child {left: 60px;
+    }
+
+    .row:last-child .cell:last-child span:last-child {top: 52px;
+    }
